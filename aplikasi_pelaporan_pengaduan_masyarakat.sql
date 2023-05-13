@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 13, 2023 at 05:38 AM
+-- Generation Time: May 13, 2023 at 07:01 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -108,8 +108,7 @@ ALTER TABLE `petugas`
 ALTER TABLE `tanggapan`
   ADD PRIMARY KEY (`id_tanggapan`),
   ADD UNIQUE KEY `id_pengaduan` (`id_pengaduan`),
-  ADD UNIQUE KEY `tanggapan` (`tanggapan`,`id_petugas`) USING HASH,
-  ADD KEY `id_petugas` (`id_petugas`);
+  ADD UNIQUE KEY `id_petugas` (`id_petugas`);
 
 --
 -- Constraints for dumped tables
